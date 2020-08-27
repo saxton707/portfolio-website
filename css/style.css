@@ -1,0 +1,120 @@
+/*
+
+Colours
+Off-Black: #0B0E21;
+Off-White: #7EB7C1;
+Red: #EE1850;
+Blue: #7EB7C1;
+
+/* ********************** FONTS *************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+/* ********************** STYLES *************************************/
+
+a {
+  color: #7EB7C1;
+  text-decoration: none; /* No underlining */
+}
+
+a:hover,
+a:focus {
+  color: #EE1850;
+  text-decoration: underline;
+}
+
+a:visited { /* visited link */
+  color: #7EB7C1;
+}
+
+a:active { /* selected link */
+  color: #7EB7C1;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+}
+
+h1 {
+  font-family: 'H74 Glitch', sans-serif;
+  font-weight: bold;
+  font-variant-caps: all;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'H74 Glitch', sans-serif;
+  font-weight: bold;
+  font-variant-caps: all;
+}
+
+h3 {
+  font-family: 'H74 Glitch', sans-serif;
+  font-weight: bold;
+  font-variant-caps: all;
+}
+
+nav {
+  right: 1em;
+  top: 3em;
+}
+nav ul {
+  display: block;
+}
+nav li {
+  display: block;
+  text-align: center;
+  margin-left: 1em;
+}
+
+ol, ul, li {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* ********************** CLASSES *************************************/
+
+.button{
+  border: .25em solid #7EB7C1;
+  font-size: .75em;
+  font-family: roboto, sans-serif;
+  padding: 1em 4em;
+  color:7EB7C1;
+  position: absolute;
+  background-color: transparent;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.8; 
+  text-decoration: none;
+  border: .25em solid: #EE1850;
+}
+
+.container {
+	background-color: #edf2f4;
+	padding-left: 200px;
+  padding-right: 200px;
+}
+
+.navlogo {
+  object-position: left;
+  width:200px;
+}
+
+.description {
+  text-align:center;
+}
+
+.thumbnail {
+  width:800px;
+}
+.portfolioimg{
+  width:100%;
+}
