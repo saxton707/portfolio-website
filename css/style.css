@@ -15,6 +15,10 @@ Blue: #7EB7C1;
 
 /* ********************** STYLES *************************************/
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: #7EB7C1;
   text-decoration: none; /* No underlining */
@@ -39,73 +43,129 @@ p {
 }
 
 body {
+    background-color: #edf2f4;
 }
 
 h1 {
-  font-family: 'H74 Glitch', sans-serif;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
   font-variant-caps: all;
   text-align: center;
 }
 
 h2 {
-  font-family: 'H74 Glitch', sans-serif;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
   font-variant-caps: all;
 }
 
 h3 {
-  font-family: 'H74 Glitch', sans-serif;
-  font-weight: bold;
-  font-variant-caps: all;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin:20px 0;
 }
 
 nav {
   right: 1em;
   top: 3em;
-}
-nav ul {
   display: block;
+  font-size: 16px;
 }
-nav li {
-  display: block;
+
+nav > ul {
+  list-style-type: none;
+  padding: 60px;
   text-align: center;
-  margin-left: 1em;
+}
+
+nav > ul > li {
+  display: block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav > ul > li > a:visited {
+  
+}
+
+nav > ul > li > a:hover {
+  
+}
+
+nav > ul > li > a:active {
+  
 }
 
 ol, ul, li {
   font-family: 'Roboto', sans-serif;
 }
 
+header {
+  text-align: center;
+  padding:10px 0;
+  position: fixed;
+  box-shadow:;
+}
+
+footer {
+  background-color: #7EB7C1;
+  padding: 20px;
+  color: #fff;
+
+}
+
+footer a {
+  color: #EE1850;
+}
+
+footer a:visited {
+  opacity: 0.8;
+  color: #EE1850;
+}
+
+footer a:active {
+  color: #EE1850;
+}
+
+
+
 
 /* ********************** CLASSES *************************************/
 
-.button{
-  border: .25em solid #7EB7C1;
+.button {
   font-size: .75em;
   font-family: roboto, sans-serif;
   padding: 1em 4em;
-  color:7EB7C1;
-  position: absolute;
-  background-color: transparent;
+  color: #FFF;
+  background-color: #7EB7C1;
   text-align: center;
 }
 
 .button:hover {
   opacity: 0.8; 
   text-decoration: none;
-  border: .25em solid: #EE1850;
+  background-color: #EE1850;
+}
+
+.button:visited {
+  color:#fff;
 }
 
 .container {
-	background-color: #edf2f4;
-	padding-left: 200px;
-  padding-right: 200px;
+	padding-left: 50px;
+  padding-right: 50px;
 }
 
 .navlogo {
   object-position: left;
-  width:200px;
+  max-width:200px;
+  text-align: center;
+  display: none;
 }
 
 .description {
@@ -113,8 +173,77 @@ ol, ul, li {
 }
 
 .thumbnail {
-  width:800px;
+  width:100%;
+  margin: 20px 0;
+  object-fit: fill;
 }
+
 .portfolioimg{
   width:100%;
 }
+
+.centertext {
+  display: block;
+  text-align: center;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.socialbutton {
+  color:#fff;
+  margin:10px;
+  display:inline-block;
+  max-width: 40px;
+
+}
+
+.emailbutton {
+  font-size: .75em;
+  font-family: roboto, sans-serif;
+  padding: 1em 4em;
+  color: #7EB7C1;
+  background-color: #FFF;
+  text-align: center;
+}
+
+
+/* ********************** ID *************************************/
+
+#hero {
+  padding: 20px;
+  display: inline-block;
+  overflow: visible;
+  width:100%;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+
+
+
+/****************************
+TABLET - SMALL LAPTOP (768px-1439px)
+****************************/
+
+@media only screen and (min-width: 768px){
+
+}
+
+
+
+/****************************
+DESKTOP (1440px +)
+****************************/
+
+@media only screen and (min-width: 1400px) {
+
+}
+
