@@ -66,15 +66,13 @@ h3 {
 }
 
 nav {
-  right: 1em;
-  top: 3em;
   display: block;
-  font-size: 16px;
+  font-size: 16pt;
 }
 
 nav > ul {
   list-style-type: none;
-  padding: 60px;
+  padding: 60px 60px 0 60px;
   text-align: center;
 }
 
@@ -83,22 +81,9 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
-}
-
-nav > ul > li > a:visited {
-  
-}
-
-nav > ul > li > a:hover {
-  
-}
-
-nav > ul > li > a:active {
-  
 }
 
 ol, ul, li {
@@ -143,7 +128,8 @@ footer a:active {
   padding: 1em 4em;
   color: #FFF;
   background-color: #7EB7C1;
-  text-align: center;
+  text-align: center; 
+  transition: 0.2s opacity;
 }
 
 .button:hover {
@@ -210,7 +196,48 @@ footer a:active {
   color: #7EB7C1;
   background-color: #FFF;
   text-align: center;
+  display:inline-block;
 }
+
+
+
+/* ******************* SVG ANIMATION *********************/
+
+@keyframes cloud-move-1 {
+  from {transform: translate(0,0px);}
+    to {transform: translate(200px,0px);}
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(0,10px);}
+    to {transform: translate(200px,0px);
+  }
+}
+
+@keyframes bigcloud {
+  from {fill:#fff;}
+  to {fill: #606060;}
+}
+
+.svganim {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.cloud1 {
+  animation: 30s cloud-move-1 infinite alternate linear;
+}
+
+.cloud2 {
+  animation: 30s cloud-move-reverse infinite alternate linear;
+}
+
+.bigcloud {
+  animation: 10s bigcloud infinite alternate linear;
+}
+
 
 
 /* ********************** ID *************************************/
@@ -228,22 +255,157 @@ footer a:active {
 
 
 
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
 
-/****************************
-TABLET - SMALL LAPTOP (768px-1439px)
-****************************/
+    header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    }
 
-@media only screen and (min-width: 768px){
+    nav {
+      width: auto;
+      float: right
+      margin-top: 4px;
+    }
+
+    /*main {
+      padding-top: 99px;
+      background-color: #00F;
+    }*/
+
+    body {
+      font-size:18pt;
+    }
+
+    h1{
+      padding-bottom: 20px;
+    }
+
+
+
+
+    
+
 
 }
 
 
 
-/****************************
-DESKTOP (1440px +)
-****************************/
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
 
-@media only screen and (min-width: 1400px) {
+  nav {
+  font-size: 16pt;
+  padding: 20px;
+  top:0px;
+  margin-bottom: 40px;
+
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0px;
+  text-align: left;
+  vertical-align: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav > ul > li > a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFF;
+}
+
+a:visited {
+  color: #FFF;
+  opacity: 0.5;
+}
+
+  picture {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  p{
+    font-size: 14pt;
+  }
+
+
+    .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bgnav {
+    background-color: #7EB7C1;
+    box-shadow: 0 4px 4px 0px rgba(0,0,0,.2);
+  }
+
+  .navlogo {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .noliststyle {
+    list-style-type: none;
+  }
+
+  .col-md-6 {
+      width: 50%;
+      margin: 50px, 20px;
+      padding: 20px;
+    }
+
+    .svganim {
+      max-width: 75%;
+      vertical-align: middle;
+    }
+
+
+
+
+    [class*="col-"] {
+      float: left;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+
+    #hero span {
+      display: block;
+    }
+
+
+}
+
+
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+   .container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
 }
 
