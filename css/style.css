@@ -65,35 +65,31 @@ h3 {
 }
 
 nav {
-  display: block;
   font-size: 16pt;
 }
 
 nav > ul {
   list-style-type: none;
-  padding: 60px 60px 0 60px;
-  text-align: center;
+  /*  padding: 60px 60px 0 60px; 
+  text-align: center; */
 }
 
+/*
 nav > ul > li {
-  display: block;
+  display: inline-block;
 }
+*/
 
-nav > ul > li > a {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
 
 ol, ul, li {
   font-family: 'Roboto', sans-serif;
 }
 
 header {
-  text-align: center;
-  padding:10px 0;
-  position: fixed;
-  box-shadow:;
+  width: 100%;
+  height:80px;
+  padding-top:15px;
+  margin-bottom:30px;
 }
 
 footer {
@@ -147,10 +143,8 @@ footer a:active {
 }
 
 .navlogo {
-  object-position: left;
-  max-width:200px;
-  text-align: center;
-  display: none;
+  max-width:150px;
+  padding:0;
 }
 
 .description {
@@ -197,6 +191,66 @@ footer a:active {
   text-align: center;
   display:inline-block;
 }
+
+  .bgnav {
+    background-color: #7EB7C1;
+    box-shadow: 0 4px 4px 0px rgba(0,0,0,.2);
+  }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  font-size: 20px;
+  color:#FFF;
+}
+
+.responsive nav {
+  padding: 24px 0 0;
+  text-align:center;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
+
+/* #myNavToggle {
+  height: 200px;
+  width: 100%;
+  background-color: #7EB7C1;
+  margin:0;
+  display:block;
+  padding:30px;
+  box-shadow: 0 4px 4px 0px rgba(0,0,0,.2);
+}
+
+#myNavToggle a {
+  color:#fff;
+  padding:10px;
+  display:block;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#myNavToggle a:visited {
+  color:#fff;
+  opacity: 0.5;
+} */
 
 
 
@@ -260,11 +314,17 @@ Medium devices (640px and larger)
     header {
     text-align: unset;
     padding: 20px 0 13px;
+    height:120px;
+    margin-bottom: 40px;
     }
 
     nav {
       width: auto;
       padding-top: 4px;
+    }
+
+    nav > ul > li {
+      display: inline-block;
     }
 
     /*main {
@@ -280,7 +340,17 @@ Medium devices (640px and larger)
       padding-bottom: 20px;
     }
 
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
 
+    .navtoggle li .icon {
+      display:none;
+    }
+
+    .navlogo {
+      width:200px;
+    }
 
 
     
@@ -333,6 +403,8 @@ a:visited {
   p{
     font-size: 14pt;
   }
+
+
 
 
     .container {

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script src="https://kit.fontawesome.com/496ff93470.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> 
         <link rel="stylesheet" href="css/foundation.css">
   		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,30 +14,30 @@
     <link rel="icon" type="image/png" href="img/branding/oddskull_red.png" />
 
     <body>
-        <!-- <header>
-            <p>
-                <a href="index.html" alt="Oddish Logo Black"> <img src="img/branding/bar_black.png" width="300px" align="middle" class="navlogo"> </a>
-            </p>
-        </header> -->
+       <header class="bgnav">
+            <div class="container">
+            <div class="navtoggle" id="myNavToggle">
 
-        <div class="bgnav">
-        <nav class="container">
-
-
+        <nav>
 
             <ul>
-
-                <a href="index.html" alt="Oddish Logo Black"> <img src="img/branding/bar_black.png" width="300px" align="middle" class="navlogo"> </a>
-
+                <a href="index.html" alt="Oddish Logo Black"> <img src="img/branding/bar_black.png" class="navlogo"> </a>
+                &nbsp;
                 <li><a href="index.html"> Work </a></li>
                 &nbsp;
                 <li><a href="about.html"> About </a></li>
                 &nbsp;
                 <!--   <li><a href="contact.html"> Contact </a></li>
                 &nbsp;  -->
+               <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
             </ul>
+
         </nav>
+
         </div>
+        </div>
+
+        </header>
 
         <main class="container">
             <hero id="hero">
@@ -291,7 +292,11 @@
         </footer>
         </div>
 
-
+    <script
+        src="https://code.jquery.com/jquery-migrate-3.3.1.min.js"
+        integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE="
+        crossorigin="anonymous">              
+    </script>    
     <script src="js/scripts.js"></script>
     
     </body>
