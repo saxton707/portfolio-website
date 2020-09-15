@@ -203,29 +203,44 @@ footer a:active {
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
+  background-color: #7EB7C1;
 }
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
-  top: 6px;
+  right: 4em;
+  top: 8px;
   font-size: 20px;
   color:#FFF;
 }
 
-.responsive nav {
-  padding: 24px 0 0;
-  text-align:center;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+.navtoggle.responsive nav {
+  padding: 0px 0 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li  {
+  display: block;
+  padding: 0px 0;
+  color:#FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align:center;
+}
+
+.navtoggle.responsive a  {
+  display: block;
+  color:#FFF;
+}
+
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
+.navtoggle.responsive .navlogo {
+  text-align: left;
+}
+
+
 
 
 
@@ -349,7 +364,7 @@ Medium devices (640px and larger)
     }
 
     .navlogo {
-      width:200px;
+      max-width:200px;
     }
 
 
@@ -415,7 +430,7 @@ a:visited {
 
   .bgnav {
     background-color: #7EB7C1;
-    box-shadow: 0 4px 4px 0px rgba(0,0,0,.2);
+    box-shadow: 0 12px 12px 10px rgba(0,0,0,.2);
   }
 
   .navlogo {
@@ -455,6 +470,8 @@ a:visited {
     #hero span {
       display: block;
     }
+
+    
 
 
 }

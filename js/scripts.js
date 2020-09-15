@@ -9,12 +9,11 @@ console.log("Hello World");
   }
 } */
 
-function myFunction() {
-	var x = document.getElementById("myNavToggle");
-	if (x.className === "navtoggle") {
-		x.className += "responsive";
-	}
-	else {
-		x.className = "navtoggle";
-	}
+function menuToggle() {
+  var x = document.getElementById('myNavToggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
 }
