@@ -20,21 +20,22 @@ Blue: #7EB7C1;
 }
 
 a {
-  color: #7EB7C1;
+  color: #EE1850;
   text-decoration: none; /* No underlining */
 }
 
 a:hover,
 a:focus {
   color: #EE1850;
+  opacity: 0.5;
 }
 
 a:visited { /* visited link */
-  color: #7EB7C1;
+  color: #1d3557;
 }
 
 a:active { /* selected link */
-  color: #7EB7C1;
+  color: #457b9d;
 }
 
 p {
@@ -230,6 +231,18 @@ footer a:active {
 .navtoggle.responsive a  {
   display: block;
   color:#FFF;
+}
+
+.navtoggle.responsive a:hover  {
+  display: block;
+  color:#EE1850;
+  opacity:0.5;
+}
+
+.navtoggle.responsive a:visited  {
+  display: block;
+  color:#1d3557;
+  opacity: 0.5;
 }
 
 .navtoggle.responsive li:last-child {
